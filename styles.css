@@ -62,16 +62,6 @@ a {
 .humburger {
 	display: none;
 }
-@media (max-width: 768px) {
-	/* … */
-	#navItems {
-		display: none;
-		/* visibility: hidden; */
-	}
-	.humburger {
-		display: block;
-	}
-}
 
 footer {
 	width: 100%;
@@ -114,6 +104,16 @@ footer {
 	border-radius: 20px;
 }
 @media (max-width: 768px) {
+    #navItems {
+		display: none;
+		/* visibility: hidden; */
+	}
+	.humburger {
+		display: block;
+	}
+    .contentBox{
+        width: 100%;
+    }
 	.item {
 		flex-wrap: wrap-reverse;
 		gap: 2rem;
