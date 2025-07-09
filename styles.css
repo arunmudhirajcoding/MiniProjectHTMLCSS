@@ -119,37 +119,16 @@ footer {
 		gap: 2rem;
         /* overflow-y: scroll; */
 	}
-	.leftBox {
-		/* display:none; */
-		/* visibility: hidden; */
-		transform: scale(0);
-        width: 0;
-        height: 0;
-		/* position: absolute; */
-        /* transition: all 1s linear; */
-	}
-    .item:hover .rightBox,.item:hover,.leftBox{
-        z-index: 10;
-    }
-    .item:hover .rightBox{
-        transform: translateX(60%);
-        position: relative;
-        top: 50%;
-        bottom: 50%;
-        
+	.leftBox{
+        position: absolute;
+        transform: scale(0)
     }
     .item:hover .leftBox{
-        transform: translateX(-50%);
-        position: sticky;
-        /* top: 0%; */
-        bottom: 100%;
-        width: 70%;
-        height: 100%;
-        /* bottom: 50%; */
-
+        z-index: 10;
+        transform: scale(0.82,1.1);
+        border: 2px rgba(255, 210, 146, 0.914) solid;
+        background: white;
     }
-	
-	
 
 	.contentBox {
 		overflow: visible;
